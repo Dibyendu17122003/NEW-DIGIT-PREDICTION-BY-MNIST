@@ -359,31 +359,21 @@ Exit
     <ul style="list-style:none; padding-left:0;">
       <li><strong>Name:</strong> Dibyendu Karmahapatra</li>
       <li><strong>GitHub:</strong> 
-        <a href="https://github.com/Dibyendu17122003" target="_blank" class="btn-link">Click here to go to GitHub</a>
+        <a href="https://github.com/Dibyendu17122003" target="_blank" 
+           style="display:inline-block; padding:0.5rem 1rem; margin-top:0.3rem; background:linear-gradient(135deg,#36d1dc,#5b86e5); color:#fff; text-decoration:none; border-radius:0.5rem;">
+           Click here to go to GitHub
+        </a>
       </li>
       <li><strong>LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/in/dibyendu-karmahapatra-17d2004/" target="_blank" class="btn-link">Click here to go to LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dibyendu-karmahapatra-17d2004/" target="_blank" 
+           style="display:inline-block; padding:0.5rem 1rem; margin-top:0.3rem; background:linear-gradient(135deg,#36d1dc,#5b86e5); color:#fff; text-decoration:none; border-radius:0.5rem;">
+           Click here to go to LinkedIn
+        </a>
       </li>
     </ul>
   </div>
 </div>
 
-<style>
-  .btn-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 0.3rem;
-    background: linear-gradient(135deg,#36d1dc,#5b86e5);
-    color: #fff !important;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    transition: background 0.3s, transform 0.3s;
-  }
-  .btn-link:hover {
-    background: linear-gradient(135deg,#ff416c,#ff4b2b);
-    transform: translateY(-2px);
-  }
-</style>
 
 
   <!-- Acknowledgments -->
