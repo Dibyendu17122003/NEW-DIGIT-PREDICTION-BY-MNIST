@@ -222,6 +222,9 @@ MNIST (Modified National Institute of Standards and Technology) dataset:
 | Training | 60,000  | 28×28      | 10 (0-9) | Grayscale |
 | Testing  | 10,000  | 28×28      | 10 (0-9) | Grayscale |
 | Total    | 70,000  | 28×28      | 10 (0-9) | Grayscale |
+
+
+
 📊 System Architecture & Flow
 Start
   │
@@ -254,6 +257,9 @@ Evaluation Mode → Generate Reports → Confusion Matrix → Misclassification 
   │
   ↓
 Exit
+
+
+
 🔮 Future Improvements
 
 <div align="center">
@@ -265,11 +271,15 @@ Exit
 | Augmentation  | Style transfer techniques  | Better generalization        |
 | UI/UX         | Web-based interface        | Broader accessibility        |
 | Collaboration | Multi-user support         | Educational applications     |
+
+   
 👨‍💻 Creator
 Your Name
 GitHub: @yourusername
 LinkedIn: Your Profile
 Portfolio: yourwebsite.com
+
+
 🙏 Acknowledgments
 
 Yann LeCun, Corinna Cortes, and Christopher Burges for the MNIST dataset
