@@ -381,48 +381,4 @@ Exit
 
 </div>
 
-<style>
-  /* General Layout */
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    padding: 1rem;
-  }
-  .section.card {
-    background: #1e1e2f;
-    color: #fff;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  }
-  h2 {
-    margin-bottom: 1rem;
-  }
-  .flowchart pre {
-    font-family: monospace;
-    color: #f0f0f0;
-    background: #2a2a3e;
-    padding: 1rem;
-    border-radius: 1rem;
-    overflow-x: auto;
-  }
-  .grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-  }
-
-  /* Hover & Glow Animations */
-  .animated-card {
-    transition: transform 0.3s, box-shadow 0.4s, background 0.5s;
-    padding: 1rem;
-    border-radius: 1rem;
-  }
-  .animated-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
-  }
-</style>
 
