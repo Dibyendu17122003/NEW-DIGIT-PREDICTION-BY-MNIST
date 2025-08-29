@@ -215,6 +215,8 @@ Use Evaluate Model to generate performance reports
 | matplotlib    | >=3.7.0  | Data visualization            |
 | seaborn       | >=0.12.0 | Statistical visualization     |
 | scikit-learn  | >=1.2.0  | Model evaluation metrics      |
+
+
 💾 Database
 MNIST (Modified National Institute of Standards and Technology) dataset:
 | Dataset  | Samples | Image Size | Classes  | Format    |
