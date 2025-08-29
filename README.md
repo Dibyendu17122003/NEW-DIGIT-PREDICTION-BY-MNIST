@@ -227,7 +227,59 @@ MNIST (Modified National Institute of Standards and Technology) dataset:
 
 
 
-📊 System Architecture & Flow
+<div class="container">
+
+  <!-- User Workflow -->
+  <div class="section card">
+    <h2>📊 User Workflow</h2>
+    <div class="flowchart" style="position: relative;">
+      <pre style="font-family:monospace; color:#f0f0f0; background:#2a2a3e; padding:1rem; border-radius:1rem; overflow-x:auto;">
+Start
+  │
+  ↓
+Grant Camera Access
+  │
+  ↓
+Load PoseNet Model
+  │
+  ↓
+Model Loaded Successfully
+  │
+  ↓
+Select Exercise Type
+  │
+  ↓
+Begin Pose Estimation
+  │
+  ↓
+Loop [Every Frame @ 30fps]
+  │      ├─ Capture Video Frame
+  │      ├─ Process Frame in PoseNet
+  │      ├─ Return Keypoints Data
+  │      ├─ Analyze Exercise Form
+  │      ├─ Update Visual Feedback
+  │      └─ Display Real-Time Guidance
+  │
+  ↓
+End Session
+  │
+  ↓
+Generate Performance Report
+  │
+  ↓
+Show Results & Progress
+  │
+  ↓
+Exit
+      </pre>
+    </div>
+  </div>
+
+  <!-- System Architecture & Flow -->
+  <div class="section card">
+    <h2>📊 System Architecture & Flow</h2>
+    <div class="flowchart" style="position: relative;">
+      <pre style="font-family:monospace; color:#f0f0f0; background:#2a2a3e; padding:1rem; border-radius:1rem; overflow-x:auto;">
 Start
   │
   ↓
@@ -248,54 +300,131 @@ Save Model Weights
   ↓
 Real-Time Application
   │
-  ├─Webcam Mode───────┬→ Capture Frame → ROI Selection → Preprocessing → Prediction → Display
-  │                   └→ Adjust Parameters → Explainability → Recording
+  ├─ Webcam Mode ──────┬→ Capture Frame → ROI Selection → Preprocessing → Prediction → Display
+  │                     └→ Adjust Parameters → Explainability → Recording
   │
-  └─Drawing Pad Mode──┬→ Draw Digit → Preprocessing → Prediction → Display
-                      └→ Undo/Redo → Save → Explainability
+  └─ Drawing Pad Mode ──┬→ Draw Digit → Preprocessing → Prediction → Display
+                        └→ Undo/Redo → Save → Explainability
   │
   ↓
 Evaluation Mode → Generate Reports → Confusion Matrix → Misclassification Analysis
   │
   ↓
 Exit
+      </pre>
+    </div>
+  </div>
 
+  <!-- Future Improvements -->
+  <div class="section card">
+    <h2>🔮 Future Improvements</h2>
+    <div class="grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:1rem;">
+      <div class="card animated-card" style="background: linear-gradient(135deg,#6a11cb,#2575fc); color:#fff;">
+        <h3>Recognition</h3>
+        <p>Extended character support</p>
+        <small>Full alphanumeric capability</small>
+      </div>
+      <div class="card animated-card" style="background: linear-gradient(135deg,#ff6f00,#ff8e53); color:#fff;">
+        <h3>Deployment</h3>
+        <p>TensorFlow Lite conversion</p>
+        <small>Mobile app deployment</small>
+      </div>
+      <div class="card animated-card" style="background: linear-gradient(135deg,#12c2e9,#c471ed); color:#fff;">
+        <h3>API</h3>
+        <p>RESTful endpoints</p>
+        <small>Cloud integration</small>
+      </div>
+      <div class="card animated-card" style="background: linear-gradient(135deg,#f7971e,#ffd200); color:#fff;">
+        <h3>Augmentation</h3>
+        <p>Style transfer techniques</p>
+        <small>Better generalization</small>
+      </div>
+      <div class="card animated-card" style="background: linear-gradient(135deg,#36d1dc,#5b86e5); color:#fff;">
+        <h3>UI/UX</h3>
+        <p>Web-based interface</p>
+        <small>Broader accessibility</small>
+      </div>
+      <div class="card animated-card" style="background: linear-gradient(135deg,#ff416c,#ff4b2b); color:#fff;">
+        <h3>Collaboration</h3>
+        <p>Multi-user support</p>
+        <small>Educational applications</small>
+      </div>
+    </div>
+  </div>
 
+  <!-- Creator -->
+  <div class="section card">
+    <h2>👨‍💻 Creator</h2>
+    <button class="collapsible">Show Details</button>
+    <div class="content">
+      <ul style="list-style:none; padding-left:0;">
+        <li><strong>Name:</strong> Your Name</li>
+        <li><strong>GitHub:</strong> <a href="#" style="color:#4dc0b5;">@yourusername</a></li>
+        <li><strong>LinkedIn:</strong> <a href="#" style="color:#4dc0b5;">Your Profile</a></li>
+        <li><strong>Portfolio:</strong> <a href="#" style="color:#4dc0b5;">yourwebsite.com</a></li>
+      </ul>
+    </div>
+  </div>
 
-🔮 Future Improvements
+  <!-- Acknowledgments -->
+  <div class="section card">
+    <h2>🙏 Acknowledgments</h2>
+    <button class="collapsible">Show Details</button>
+    <div class="content">
+      <ul style="list-style:none; padding-left:0;">
+        <li>Yann LeCun, Corinna Cortes, and Christopher Burges for the MNIST dataset</li>
+        <li>TensorFlow and Keras teams</li>
+        <li>PyGame community</li>
+        <li>OpenCV contributors</li>
+      </ul>
+      <p class="center" style="margin-top:1rem;">⭐ Star this repo if you found it helpful!</p>
+    </div>
+  </div>
 
-<div align="center">
-| Area          | Improvement                | Impact                       |
-| ------------- | -------------------------- | ---------------------------- |
-| Recognition   | Extended character support | Full alphanumeric capability |
-| Deployment    | TensorFlow Lite conversion | Mobile app deployment        |
-| API           | RESTful endpoints          | Cloud integration            |
-| Augmentation  | Style transfer techniques  | Better generalization        |
-| UI/UX         | Web-based interface        | Broader accessibility        |
-| Collaboration | Multi-user support         | Educational applications     |
+</div>
 
-   
-👨‍💻 Creator
-Your Name
-GitHub: @yourusername
-LinkedIn: Your Profile
-Portfolio: yourwebsite.com
+<style>
+  /* Hover & Glow Animations */
+  .animated-card {
+    transition: transform 0.3s, box-shadow 0.4s, background 0.5s;
+  }
+  .animated-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    background: linear-gradient(135deg, #ff416c, #ff4b2b, #ff6f00);
+  }
 
+  /* Collapsible Section Styles */
+  .collapsible {
+    background: #3a3a55;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    text-align: left;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+  }
+  .collapsible:hover { background: #5a5ab5; }
+  .content { padding: 0 1rem; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background-color: #2a2a3e; border-radius: 0 0 1rem 1rem; margin-bottom:1rem;}
+</style>
 
-🙏 Acknowledgments
+<script>
+  // Collapsible sections
+  const coll = document.getElementsByClassName("collapsible");
+  for(let i=0;i<coll.length;i++){
+    coll[i].addEventListener("click", function(){
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if(content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
 
-Yann LeCun, Corinna Cortes, and Christopher Burges for the MNIST dataset
-
-TensorFlow and Keras teams
-
-PyGame community
-
-OpenCV contributors
-
-<div align="center"> ⭐ Star this repo if you found it helpful!
-
-
-
-
-
-</div> ```
