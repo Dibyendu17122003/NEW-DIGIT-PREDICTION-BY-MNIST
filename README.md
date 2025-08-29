@@ -232,8 +232,8 @@ MNIST (Modified National Institute of Standards and Technology) dataset:
   <!-- User Workflow -->
   <div class="section card">
     <h2>📊 User Workflow</h2>
-    <div class="flowchart" style="position: relative;">
-      <pre style="font-family:monospace; color:#f0f0f0; background:#2a2a3e; padding:1rem; border-radius:1rem; overflow-x:auto;">
+    <div class="flowchart">
+      <pre>
 Start
   │
   ↓
@@ -278,8 +278,8 @@ Exit
   <!-- System Architecture & Flow -->
   <div class="section card">
     <h2>📊 System Architecture & Flow</h2>
-    <div class="flowchart" style="position: relative;">
-      <pre style="font-family:monospace; color:#f0f0f0; background:#2a2a3e; padding:1rem; border-radius:1rem; overflow-x:auto;">
+    <div class="flowchart">
+      <pre>
 Start
   │
   ↓
@@ -318,7 +318,7 @@ Exit
   <!-- Future Improvements -->
   <div class="section card">
     <h2>🔮 Future Improvements</h2>
-    <div class="grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:1rem;">
+    <div class="grid">
       <div class="card animated-card" style="background: linear-gradient(135deg,#6a11cb,#2575fc); color:#fff;">
         <h3>Recognition</h3>
         <p>Extended character support</p>
@@ -355,7 +355,6 @@ Exit
   <!-- Creator -->
   <div class="section card">
     <h2>👨‍💻 Creator</h2>
-    <button class="collapsible">Show Details</button>
     <div class="content">
       <ul style="list-style:none; padding-left:0;">
         <li><strong>Name:</strong> Your Name</li>
@@ -369,7 +368,6 @@ Exit
   <!-- Acknowledgments -->
   <div class="section card">
     <h2>🙏 Acknowledgments</h2>
-    <button class="collapsible">Show Details</button>
     <div class="content">
       <ul style="list-style:none; padding-left:0;">
         <li>Yann LeCun, Corinna Cortes, and Christopher Burges for the MNIST dataset</li>
@@ -384,47 +382,47 @@ Exit
 </div>
 
 <style>
+  /* General Layout */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+  }
+  .section.card {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .flowchart pre {
+    font-family: monospace;
+    color: #f0f0f0;
+    background: #2a2a3e;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow-x: auto;
+  }
+  .grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
   /* Hover & Glow Animations */
   .animated-card {
     transition: transform 0.3s, box-shadow 0.4s, background 0.5s;
+    padding: 1rem;
+    border-radius: 1rem;
   }
   .animated-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 15px 40px rgba(0,0,0,0.7);
-    background: linear-gradient(135deg, #ff416c, #ff4b2b, #ff6f00);
   }
-
-  /* Collapsible Section Styles */
-  .collapsible {
-    background: #3a3a55;
-    color: white;
-    cursor: pointer;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    border-radius: 0.5rem;
-    margin: 0.5rem 0;
-    text-align: left;
-    font-size: 1.1rem;
-    transition: background 0.3s;
-  }
-  .collapsible:hover { background: #5a5ab5; }
-  .content { padding: 0 1rem; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background-color: #2a2a3e; border-radius: 0 0 1rem 1rem; margin-bottom:1rem;}
 </style>
-
-<script>
-  // Collapsible sections
-  const coll = document.getElementsByClassName("collapsible");
-  for(let i=0;i<coll.length;i++){
-    coll[i].addEventListener("click", function(){
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-      if(content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-</script>
 
